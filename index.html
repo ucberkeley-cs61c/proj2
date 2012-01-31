@@ -157,7 +157,7 @@ Xbody {
   <p class="c3"><span class="c22">Intermediate milestone due Sunday Feb 19 @ 23:59:59
   PST</span></p>
 
-  <p class="c3"><span class="c22">Project due Feb 26 @ 23:59:59 PST</span></p>
+  <p class="c3"><span class="c22">Project due Sundary Feb 26 @ 23:59:59 PST</span></p>
 
 
   <h2 class="c3 c12"><span class="c19">Background</span></h2>
@@ -180,8 +180,7 @@ usg=AFQjCNHYPAw5-h7YOM3NbYxHACZyvlze9w">
 
   <h2 class="c3 c12"><span class="c19">Getting started</span></h2>
 
-  <p class="c3"><span class="c4">This is an individual assignment. &nbsp;All of your work
-  must be yours alone.</span></p>
+  <p class="c3"><span class="c4">This is an individual assignment. All of your work must be yours alone.</span></p>
   <p></p>
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
@@ -214,6 +213,8 @@ $ git pull proj2 master
   &nbsp;You need to modify the files colored blue. &nbsp;You may find it
   helpful to look at the files colored black. &nbsp;You definitely do not need to look at
   the files colored red.</span></p>
+
+<br>
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
@@ -259,7 +260,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
 
   <h2 class="c3 c12"><span class="c19">Project</span></h2>
 
-  <h2 class="c3 c12"><span class="c4">The files provided in the start kit comprise a
+  <p class="c4">The files provided in the start kit comprise a
   framework for a MIPS simulator. You&rsquo;ll complete the program by adding code
   to</span> <span class="c5">processor.c and memory.c</span> <span class="c4">to execute
   each instruction and perform memory access. &nbsp;Additionally, you&rsquo;ll add code to</span> <span class=
@@ -267,7 +268,11 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
   corresponding to the instruction&rsquo;s machine code. &nbsp;Your simulator must be
   able to simulate the machine code versions of the following MIPS machine instructions.
   &nbsp;We&rsquo;ve already implemented the pink-colored instructions for you, so you
-  have an example of an R-type, I-type, and J-type instruction.</span></h2>
+  have an example of an R-type, I-type, and J-type instruction.</p>
+  <br>
+  <p><i>
+    You should read and understand the definitions in <b>processor.h</b> before starting the project. If they don't make sense to you, re-read chapter 6 of K&R, which covers structs, bitfields, and unions.
+  </i></p>
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
@@ -1110,8 +1115,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
 <p>
- The MIPS system you&rsquo;re implementing is little-endian. &nbsp;Look at P&amp;
-H (4th edition) page B-43 for further information on endianness (byte order). &nbsp;We chose little endian because the host machines (x86 hive computers) are little endian, and this avoids some complexity for sub-word loads and stores.
+ The MIPS system you&rsquo;re implementing is little-endian. &nbsp;Look at P&amp;H (4th edition) page B-43 for further information on endianness (byte order). &nbsp;We chose little endian because the host machines (x86 hive computers) are little endian, and this avoids some complexity for sub-word loads and stores.
 
  </p>
  <br>
@@ -1400,11 +1404,7 @@ tracing mode,&rdquo;
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
-  <p class="c3"><span class="c4">We have provided a few more tests and the ability to
-  write your own. &nbsp;We described</span> <span class="c5">simple</span> <span class=
-  "c4">above, which prints out &ldquo;
-Hello, world!&rdquo;
-, and is written in assembly.
+  <p class="c3"><span class="c4">We have provided a few more tests and the ability to write your own. &nbsp;We described</span> <span class="c5">simple</span> <span class="c4">above, which prints out &ldquo; Hello, world!&rdquo;, and is written in assembly.
   &nbsp;</span><span class="c9 c22">You can, and indeed</span> <span class=
   "c9 c10">should</span><span class="c9 c22">, write your own assembly tests to test
   specific instructions and their corner cases.</span> <span class=

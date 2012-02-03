@@ -1405,10 +1405,9 @@ tracing mode,&rdquo;
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
   <p class="c3"><span class="c4">We have provided a few more tests and the ability to write your own. &nbsp;We described</span> <span class="c5">simple</span> <span class="c4">above, which prints out &ldquo; Hello, world!&rdquo;, and is written in assembly.
-  &nbsp;</span><span class="c9 c22">You can, and indeed</span> <span class=
-  "c9 c10">should</span><span class="c9 c22">, write your own assembly tests to test
-  specific instructions and their corner cases.</span> <span class=
-  "c4">&nbsp;Here&rsquo;s an example of how to do so:</span></p>
+  &nbsp;</span>
+<span class=
+  "c4">&nbsp;Here&rsquo;s an example of how to add an assembly test:</span></p>
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
@@ -1439,6 +1438,9 @@ tracing mode,&rdquo;
   <p class="c3"><span class="c5">$ ./mips-sim mipscode/foo</span></p>
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
+  <p>
+  <i>You can, and indeed should, write your own assembly tests to test specific instructions and their corner cases. Furthermore, you should be compiling and testing your code after each group of instructions you implement. It will be very hard to debug your project if you wait until the end to test.</i>
+  </p><br>
 
   <p class="c3"><span class="c4">Additionally, you can write test programs in C and run
   them on your simulator, once you&rsquo;ve implemented all of the instructions! &nbsp;We

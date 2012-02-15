@@ -166,7 +166,7 @@ Xbody {
     </div>
   <h2 class="c3 c12"><span class="c19">Updates</span></h2>
   <ul style="color: #0a0">
-  <li>2/14 - Clarified access_ok() spec to require returning 0 for NULL dereferences.</li>
+  <li>2/14 - Changed access_ok() spec to require returning 0 for NULL dereferences.</li>
   </ul>
 
   <h2 class="c3 c12"><span class="c19">Background</span></h2>
@@ -1371,7 +1371,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
 
   <p class="c3"><span class="c4">One issue we have not addressed thus far is address
   alignment for loads and stores. &nbsp;The simulator should abort if
-  the PC is misaligned (i.e. not divisible by 4), or outside of the range [0,MEM_SIZE).
+  the PC is misaligned (i.e. not divisible by 4), or outside of the range [1,MEM_SIZE).
   &nbsp;The same behavior should occur for misaligned loads and stores.
   &nbsp;</span><span class="c5">lw</span> <span class="c4">and</span> <span class=
   "c5">sw</span> <span class="c4">require 4-byte alignment, like the PC.
@@ -1380,7 +1380,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
   "c4">require 2-byte alignment. &nbsp;</span><span class="c5">lb</span><span class=
   "c4">,</span> <span class="c5">lbu</span><span class="c4">, and</span> <span class=
   "c5">sb</span> <span class="c4">are always properly aligned. &nbsp;For misaligned or
-  out-of-range addresses (this includes the NULL address 0), you must have access_ok() return 0 in memory.c, which will cause the simulator to print an error message and abort.
+  out-of-range addresses (this includes the NULL address 0), you must have access_ok() return 0 in memory.c, which will cause the simulator to print an error message and abort. This is analogous to the <i>segmentation fault</i> you may see when an x86 program does an illegal memory access.
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
 

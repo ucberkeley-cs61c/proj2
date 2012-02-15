@@ -180,10 +180,7 @@ Xbody {
 
 <br>
   <p class="c3"><span class="c4">The</span> <span class="c7"><a href=
-  "http://www.google.com/url?q=http%3A%2F%2Finst.eecs.berkeley.edu%2F~cs61c%2Fresources%2FMIPS_Green_Sheet.pdf&amp;
-sa=D&amp;
-sntz=1&amp;
-usg=AFQjCNHYPAw5-h7YOM3NbYxHACZyvlze9w">
+  "http://www.google.com/url?q=http%3A%2F%2Finst.eecs.berkeley.edu%2F~cs61c%2Fresources%2FMIPS_Green_Sheet.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHYPAw5-h7YOM3NbYxHACZyvlze9w">
   MIPS green sheet</a></span> <span class="c4">provides information necessary for
   completing this project.</span></p>
 
@@ -256,10 +253,7 @@ $ git pull proj2 master
 
     <li class="c20"><span class="c16">elf.h</span><span class="c4">: C header file for
     ELF definitions. (</span><span class="c7"><a href=
-    "http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FExecutable_and_Linkable_Format&amp;
-sa=D&amp;
-sntz=1&amp;
-usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
+    "http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FExecutable_and_Linkable_Format&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
     <span class="c4">is the standard executable file format in Linux.)</span></li>
 
     <li class="c20"><span class="c5">Makefile</span><span class="c4">: File which records
@@ -329,10 +323,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rt] &lt;
-&lt;
- shamt</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rt] &lt;&lt; shamt</span></p>
         </td>
       </tr>
 
@@ -354,10 +345,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rt] &gt;
-&gt;
- shamt</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rt] &gt;&gt; shamt</span></p>
         </td>
       </tr>
 
@@ -379,10 +367,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- (signed)R[rt] &gt;
-&gt;
-
+          <p class="c11"><span class="c5">R[rd] &lt;- (signed)R[rt] &gt;&gt;
           shamt</span></p>
         </td>
       </tr>
@@ -405,8 +390,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">PC &lt;
-- R[rs]</span></p>
+          <p class="c11"><span class="c5">PC &lt;- R[rs]</span></p>
         </td>
       </tr>
 
@@ -428,14 +412,11 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">tmp &lt;
-- PC + 4</span></p>
+          <p class="c11"><span class="c5">tmp &lt;- PC + 4</span></p>
 
-          <p class="c11"><span class="c5">PC &lt;
-- R[rs]</span></p>
+          <p class="c11"><span class="c5">PC &lt;- R[rs]</span></p>
 
-          <p class="c11"><span class="c5">R[rd] &lt;
-- tmp</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- tmp</span></p>
         </td>
       </tr>
 
@@ -479,8 +460,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rs] + R[rt]</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rs] + R[rt]</span></p>
         </td>
       </tr>
 
@@ -502,8 +482,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rs] - R[rt]</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rs] - R[rt]</span></p>
         </td>
       </tr>
 
@@ -525,9 +504,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rs] &amp;
- R[rt]</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rs] &amp; R[rt]</span></p>
         </td>
       </tr>
 
@@ -549,8 +526,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8 c14">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rs] | R[rt]</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rs] | R[rt]</span></p>
         </td>
       </tr>
 
@@ -572,8 +548,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rs] ^ R[rt]</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rs] ^ R[rt]</span></p>
         </td>
       </tr>
 
@@ -595,8 +570,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- ~(R[rs] | R[rt])</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- ~(R[rs] | R[rt])</span></p>
         </td>
       </tr>
 
@@ -618,9 +592,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- (signed)R[rs] &lt;
-
+          <p class="c11"><span class="c5">R[rd] &lt;- (signed)R[rs] &lt;
           (signed)R[rt]</span></p>
         </td>
       </tr>
@@ -643,9 +615,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rd] &lt;
-- R[rs] &lt;
- R[rt]</span></p>
+          <p class="c11"><span class="c5">R[rd] &lt;- R[rs] &lt; R[rt]</span></p>
         </td>
       </tr>
 
@@ -667,8 +637,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8 c14">
-          <p class="c11"><span class="c5">PC &lt;
-- {(upper 4 bits of PC+4),
+          <p class="c11"><span class="c5">PC &lt;- {(upper 4 bits of PC+4),
           address*4}</span></p>
         </td>
       </tr>
@@ -691,11 +660,9 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[31] &lt;
-- PC + 4</span></p>
+          <p class="c11"><span class="c5">R[31] &lt;- PC + 4</span></p>
 
-          <p class="c11"><span class="c5">PC &lt;
-- {(upper 4 bits of PC+4),
+          <p class="c11"><span class="c5">PC &lt;- {(upper 4 bits of PC+4),
           address*4}</span></p>
         </td>
       </tr>
@@ -720,8 +687,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         <td class="c8">
           <p class="c11"><span class="c5">if(R[rs] == R[rt])</span></p>
 
-          <p class="c11"><span class="c5">&nbsp;PC &lt;
-- PC + 4 +
+          <p class="c11"><span class="c5">&nbsp;PC &lt;- PC + 4 +
           signext(offset)*4</span></p>
         </td>
       </tr>
@@ -746,8 +712,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         <td class="c8">
           <p class="c11"><span class="c5">if(R[rs] != R[rt])</span></p>
 
-          <p class="c11"><span class="c5">&nbsp;PC &lt;
-- PC + 4 +
+          <p class="c11"><span class="c5">&nbsp;PC &lt;- PC + 4 +
           signext(offset)*4</span></p>
         </td>
       </tr>
@@ -770,8 +735,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- R[rs] + signext(imm)</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;- R[rs] + signext(imm)</span></p>
         </td>
       </tr>
 
@@ -793,9 +757,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- (signed)R[rs] &lt;
-
+          <p class="c11"><span class="c5">R[rt] &lt;- (signed)R[rs] &lt;
           signext(imm)</span></p>
         </td>
       </tr>
@@ -818,9 +780,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- R[rs] &lt;
- signext(imm)</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;- R[rs] &lt; signext(imm)</span></p>
         </td>
       </tr>
 
@@ -842,9 +802,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- R[rs] &amp;
- zeroext(imm)</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;- R[rs] &amp; zeroext(imm)</span></p>
         </td>
       </tr>
 
@@ -866,8 +824,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8 c14">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- R[rs] | zeroext(imm)</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;- R[rs] | zeroext(imm)</span></p>
         </td>
       </tr>
 
@@ -889,8 +846,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- R[rs] ^ zeroext(imm)</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;- R[rs] ^ zeroext(imm)</span></p>
         </td>
       </tr>
 
@@ -912,10 +868,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- imm &lt;
-&lt;
- 16</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;- imm &lt;&lt; 16</span></p>
         </td>
       </tr>
 
@@ -937,8 +890,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
--
+          <p class="c11"><span class="c5">R[rt] &lt;-
           signext(LoadMem(R[rs]+signext(offset), byte))</span></p>
         </td>
       </tr>
@@ -961,8 +913,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
--
+          <p class="c11"><span class="c5">R[rt] &lt;-
           signext(LoadMem(R[rs]+signext(offset), half))</span></p>
         </td>
       </tr>
@@ -985,8 +936,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
-- LoadMem(R[rs]+signext(offset),
+          <p class="c11"><span class="c5">R[rt] &lt;- LoadMem(R[rs]+signext(offset),
           word)</span></p>
         </td>
       </tr>
@@ -1009,8 +959,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
--
+          <p class="c11"><span class="c5">R[rt] &lt;-
           zeroext(LoadMem(R[rs]+signext(offset), byte))</span></p>
         </td>
       </tr>
@@ -1033,8 +982,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
         </td>
 
         <td class="c8">
-          <p class="c11"><span class="c5">R[rt] &lt;
--</span></p>
+          <p class="c11"><span class="c5">R[rt] &lt;-</span></p>
 
           <p class="c11"><span class="c5">zeroext(LoadMem(R[rs]+signext(offset),
           half))</span></p>
@@ -1113,8 +1061,7 @@ usg=AFQjCNEisMmSfg167wimWxnzPlkOuF6pNg">ELF</a></span>
   </table>
 
   <h2 class="c3 c12"><span class="c4">If you have any questions about the semantics of
-  the instructions, consult P&amp;
-H (4th ed.) Section 2.9 and Appendix B, particularly if
+  the instructions, consult P&amp;H (4th ed.) Section 2.9 and Appendix B, particularly if
   you find our pseudocode for loads and stores to be confusing. &nbsp;(The first argument
   to</span> <span class="c5">LoadMem</span> <span class="c4">and</span> <span class=
   "c5">StoreMem</span> <span class="c4">in our pseudocode is the memory address.
@@ -1133,15 +1080,12 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
   <p class="c3"><span class="c4">In our variant of MIPS,</span> <span class=
   "c5">beq</span> <span class="c4">and</span> <span class="c5">bne</span> <span class=
   "c4">are</span> <span class="c4 c26">not</span> <span class="c4">delayed branches.
-  &nbsp;(If you don&rsquo;t know what that means, just ignore it;
- your default assumption
+  &nbsp;(If you don&rsquo;t know what that means, just ignore it; your default assumption
   about the behavior of branches is probably correct for this project. &nbsp;We&rsquo;ll
   talk about this topic later in the semester.)</span></p>
 <br>
   <h2 class="c3 c12"><span class="c4">Initially, you will be able to run a program called
-  &ldquo;
-</span><span class="c5">simple</span><span class="c4">&rdquo;
-, which only uses the pink colored instructions, by running the following commands:</span></h2>
+  &ldquo;</span><span class="c5">simple</span><span class="c4">&rdquo;, which only uses the pink colored instructions, by running the following commands:</span></h2>
 
   <p class="c3"><span class="c5">&nbsp;</span></p>
 
@@ -1299,8 +1243,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
 
   <p class="c3"><span class="c5">$ make disasmtest</span></p>
 
-  <p class="c3"><span class="c5">./mips-sim -d mipscode/insts &gt;
- insts.dump</span></p>
+  <p class="c3"><span class="c5">./mips-sim -d mipscode/insts &gt; insts.dump</span></p>
 
   <p class="c3"><span class="c5">DISASSEMBLY TEST PASSED!</span></p>
 
@@ -1308,8 +1251,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
 
   <p class="c3"><span class="c4">If your disassembly does not match the output, you will
   get the difference between the reference output and your output, and a
-  &ldquo;</span><span class="c5">DISASSEMBLY TEST FAILED!</span><span class="c4">&rdquo;
-  message. &nbsp;Make sure you pass this test before submitting your first
+  &ldquo;</span><span class="c5">DISASSEMBLY TEST FAILED!</span><span class="c4">&rdquo;  message. &nbsp;Make sure you pass this test before submitting your first
   task.</span></p>
 
   <p class="c3"><span class="c5">&nbsp;</span></p>
@@ -1318,31 +1260,26 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
 
   <p class="c3"><span class="c5">$ make disasmtest</span></p>
 
-  <p class="c3"><span class="c5">./mips-sim -d mipscode/insts &gt;
- insts.dump</span></p>
+  <p class="c3"><span class="c5">./mips-sim -d mipscode/insts &gt; insts.dump</span></p>
 
   <p class="c3"><span class="c5">56c56</span></p>
 
-  <p class="c3"><span class="c5">&lt;
- 000010dc:
+  <p class="c3"><span class="c5">&lt; 000010dc:
   addiu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30,$0,11</span></p>
 
   <p class="c3"><span class="c5">---</span></p>
 
-  <p class="c3"><span class="c5">&gt;
- 000010dc:
+  <p class="c3"><span class="c5">&gt; 000010dc:
   addiu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30,$0,0x11</span></p>
 
   <p class="c3"><span class="c5">66c66</span></p>
 
-  <p class="c3"><span class="c5">&lt;
- 00001104:
+  <p class="c3"><span class="c5">&lt; 00001104:
   bne&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$4,$5,44</span></p>
 
   <p class="c3"><span class="c5">---</span></p>
 
-  <p class="c3"><span class="c5">&gt;
- 00001104:
+  <p class="c3"><span class="c5">&gt; 00001104:
   bne&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$4,$5, 44</span></p>
 
   <p class="c3"><span class="c5">DISASSEMBLY TEST FAILED!</span></p>
@@ -1397,8 +1334,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
 
   <p class="c3"><span class="c5">$ make runtest</span></p>
 
-  <p class="c3"><span class="c5">./mips-sim -r mipscode/insts &gt;
- insts.trace</span></p>
+  <p class="c3"><span class="c5">./mips-sim -r mipscode/insts &gt; insts.trace</span></p>
 
   <p class="c3"><span class="c5">RUN TEST PASSED!</span></p>
 

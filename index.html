@@ -1376,7 +1376,7 @@ H (4th ed.) Section 2.9 and Appendix B, particularly if
   "c4">require 2-byte alignment. &nbsp;</span><span class="c5">lb</span><span class=
   "c4">,</span> <span class="c5">lbu</span><span class="c4">, and</span> <span class=
   "c5">sb</span> <span class="c4">are always properly aligned. &nbsp;For misaligned or
-  out-of-range addresses, you must have access_ok() return 0 in memory.c, which will cause the simulator to print an error message and abort.
+  out-of-range addresses (this includes the NULL address 0), you must have access_ok() return 0 in memory.c, which will cause the simulator to print an error message and abort.
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
 

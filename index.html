@@ -1345,6 +1345,18 @@ of your repo.</p>
   <p class="c3"><span class="c5">RUN TEST PASSED!</span></p>
 
   <p class="c3"><span class="c4">&nbsp;</span></p>
+<p> Most likely you will have bugs, so try the tracing mode or other debugging modes described in the Framework code section above.
+<pre>
+$ ./mips-sim -t mipscode/simple
+00001000: ori	$4,$4,0x1014
+00001004: ori	$2,$0,0x4
+00001008: syscall
+Hello, world!
+0000100c: ori	$2,$0,0xa
+00001010: syscall
+exiting the simulator
+</pre>
+
 
   <p class="c3"><span class="c4">We have provided a few more tests and the ability to write your own. &nbsp;We described</span> <span class="c5">simple</span> <span class="c4">above, which prints out &ldquo; Hello, world!&rdquo;, and is written in assembly.
   &nbsp;</span>

@@ -1314,10 +1314,7 @@ of your repo.</p>
   <p class="c3"><span class="c4">&nbsp;</span></p>
 
   <p class="c3"><span class="c4">One issue we have not addressed thus far is address
-  alignment for loads and stores. &nbsp;The simulator should abort if
-  the PC is misaligned (i.e. not divisible by 4), or outside of the range [1,MEM_SIZE).
-  &nbsp;The same behavior should occur for misaligned loads and stores.
-  &nbsp;</span><span class="c5">lw</span> <span class="c4">and</span> <span class=
+  alignment for loads and stores. The simulator should abort if a memory access is improperly aligned or outside of the range [1,MEM_SIZE). The same behavior should occur for misaligned loads and stores. </span><span class="c5">lw</span> <span class="c4">and</span> <span class=
   "c5">sw</span> <span class="c4">require 4-byte alignment, like the PC.
   &nbsp;</span><span class="c5">lh</span><span class="c4">,</span> <span class=
   "c5">lhu</span><span class="c4">, and</span> <span class="c5">sh</span> <span class=
